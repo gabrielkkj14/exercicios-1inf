@@ -25,11 +25,11 @@ test("A quantidade deve ser 2", () => {
 })
 
 test("O desconto deve ser 10%", () => {
-  expect(pedido.descontoPercentual).toBe(10)
+  expect(pedido.desconto).toBe(10)
 })
 
-test("O valor pago deve ser 7000", () => {
-  expect(pedido.valorPago).toBe(7000)
+test("O valor final pago deve ser 6300", () => {
+  expect(pedido.valorFinal).toBe(6300)
 })
 
 test("O subtotal deve ser 7000", () => {
@@ -37,7 +37,7 @@ test("O subtotal deve ser 7000", () => {
 })
 
 test("O valor do desconto deve ser 700", () => {
-  expect(pedido.valorDesconto).toBe(700)
+  expect(pedido.valorDoDesconto).toBe(700)
 })
 
 test("O valor final deve ser 6300", () => {
